@@ -8,7 +8,7 @@ async function selection(){
         ele[i].style.background='blue'
         for(let j=i+1;j<ele.length;j++){
             ele[j].style.background='red'
-            await waitforme(delay)
+            await waitfosrme(delay)
             if(parseInt(ele[j].style.height)<parseInt(ele[miniidx].style.height)){
                 if(miniidx!==i){
                     ele[miniidx].style.backgoround='cyan'
