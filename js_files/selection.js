@@ -11,7 +11,7 @@ async function selection(){
             await waitforme(delay)
             if(parseInt(ele[j].style.height)<parseInt(ele[miniidx].style.height)){
                 if(miniidx!==i){
-                    ele[miniidx].style.background='cyan'
+                    ele[miniidx].style.backgoround='cyan'
                 }
                 miniidx=j;
             }else{

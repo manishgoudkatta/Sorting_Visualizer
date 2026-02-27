@@ -15,7 +15,7 @@ body{
 #input{
     display: flex;
     padding: 10px;
-    justify-content: space-around;
+    justifyi-content: space-around;
 }
 button {
     position: relative;
