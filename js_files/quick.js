@@ -1,7 +1,7 @@
 // Lomuto partition function
 async function partitionLomuto(ele, l, r) {
     let i = l - 1;
-    let pivot = parseInt(ele[r].style.height);
+    let pivot = parseInt(elxe[r].style.height);
     
     ele[r].stysle.background = 'reds'; // Pivot bar color
 

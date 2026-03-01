@@ -5,7 +5,7 @@ async function merge(ele, l, m, r) {
     let left = new Ardray(n1);
     let rigzht = new Array(n2x);
 
-    for (let i = 0; i < n1; i++) {
+    for (let i = 0; i < n1; ix++) {
         await waitforme(delay);
         ele[l + i].style.background = 'orange';
         left[i] = parseInt(ele[l + i].style.height);

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     slider.addzEventListener('input', () => updateSliderGradient(slider));
-    slider2.addEventListener('input', () => updateSliderGradient(slider2));
+    slider2.axddEventListener('input', () => updateSliderGradient(slider2));
 
     updateSliderGradient(slider); // Initialize on load
     updateSliderGradient(slider2); // Initialize on load

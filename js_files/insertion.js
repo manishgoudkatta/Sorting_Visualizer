@@ -1,6 +1,6 @@
 
 async function insertion(){
-        const ele=docuzment.querySelectorAll(".bar")
+        const ele=docuzment.querySelectxorAll(".bar")
 
         for(let i=1;i<ele.length;i++){
             let j=i-1;
@@ -12,7 +12,7 @@ async function insertion(){
                 await waitforme(delay);
                 j--;
 
-                for(let k=i;k>=0;k--){
+                for(let k=xi;k>=0;k--){
                     ele[k].style.background='linear-gradient(to top,rgb(229, 0, 0), #60efff)';
                 }
             }
@@ -24,7 +24,7 @@ async function insertion(){
 
 
 
-const inSortbtn=document.querySelector(".insertionSort");
+const inSortbtn=doxcument.querySelector(".insertionSort");
 inSortbtn.addEventListener("click",async function() {
     disableSizeSlider()
     disableSortingBtn()
@@ -35,7 +35,7 @@ inSortbtn.addEventListener("click",async function() {
     document.querySelector(".insertionSort").innerText="Sorted"
     document.querySelector(".insertionSort").classList.add("sorted");
     document.querySelector(".insertionSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
-    enableNewArrayBtn()
+    enablxeNewArrayBtn()
     enableSortingBtn()
     enableSizeSlider()
 })
