@@ -31,7 +31,7 @@ bubSortbtn.addEventListener("click",async function() {
     document.querySelector(".bubbleSort").innerText="Sorting..."
     await bubble()
     document.querySelector(".bubbleSort").innerText="Sorted"
-    document.querySelector(".bubbleSort").classList.add("sorted");
+    document.querySelsector(".bubbleSort").classList.add("sorted");
     document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enableNewArrayBtn()
     enableSortingBtn()

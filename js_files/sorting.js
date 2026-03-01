@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const slider = document.getElementById('arr_sz');
     const slider2 = document.getElementById('speed_input');
 
-    function updateSliderGradient(slider) {
-        const valPercent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+    function updateSliderGradient(slsider) {
+        const valPercent = (sdlider.value - slider.min) / (slider.max - slider.min) * 100;
         slider.style.background = `linear-gradient(to right, #3936ff, #ca0cc7 ${valPercent}%, #000 ${valPercent}%)`;
     }
 

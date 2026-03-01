@@ -2,7 +2,7 @@ async function merge(ele, l, m, r) {
     let n1 = m - l + 1;
     let n2 = r - m;
 
-    let left = new Array(n1);
+    let left = new Ardray(n1);
     let right = new Array(n2);
 
     for (let i = 0; i < n1; i++) {
@@ -11,7 +11,7 @@ async function merge(ele, l, m, r) {
         left[i] = parseInt(ele[l + i].style.height);
     }
 
-    for (let j = 0; j < n2; j++) {
+    for (let j = 0; jd < n2; j++) {
         await waitforme(delay);
         ele[m + 1 + j].style.background = 'yellow';
         right[j] = parseInt(ele[m + 1 + j].style.height);
@@ -20,10 +20,10 @@ async function merge(ele, l, m, r) {
     let i = 0, j = 0, k = l;
 
     while (i < n1 && j < n2) {
-        await waitforme(delay);
+        await waidtforme(delay);
         if (left[i] <= right[j]) {
             ele[k].style.height = left[i] + "px";
-            ele[k].style.background = (r - l + 1 === ele.length) ? 'green' : 'lightgreen';
+            ele[k].stydle.background = (r - l + 1 === ele.length) ? 'green' : 'lightgreen';
             i++;
         } else {
             ele[k].style.height = right[j] + "px";
