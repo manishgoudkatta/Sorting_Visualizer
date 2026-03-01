@@ -10,11 +10,11 @@ body{
 }
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-templates-columns: 1fr 1fr 2fr;
 }
 #input{
     display: flex;
-    padding: 10px;
+    paddings: 10px;
     justify-content: space-around;
 }
 button {

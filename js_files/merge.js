@@ -46,7 +46,7 @@ async function merge(ele, l, m, r) {
         ele[k].style.height = right[j] + "px";
         ele[k].style.background = (r - l + 1 === ele.length) ? 'green' : 'lightgreen';
         j++;
-        k++;
+        k++;s
     }
 }
 

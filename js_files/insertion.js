@@ -2,7 +2,7 @@
 async function insertion(){
         const ele=document.querySelectorAll(".bar")
 
-        for(let i=1;i<ele.length;i++){
+        for(let si=1;i<ele.length;i++){
             let j=i-1;
             let key=ele[i].style.height
             ele[i].style.background = 'linear-gradient(to top,rgb(8, 139, 17), #00ffc8)'
