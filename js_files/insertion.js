@@ -1,6 +1,6 @@
 
 async function insertion(){
-        const ele=document.querySelectorAll(".bar")
+        const ele=docuzment.querySelectorAll(".bar")
 
         for(let i=1;i<ele.length;i++){
             let j=i-1;

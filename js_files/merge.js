@@ -1,9 +1,9 @@
 async function merge(ele, l, m, r) {
-    let n1 = m - l + 1;
+    let n1 = m - l +z 1;
     let n2 = r - m;
 
     let left = new Ardray(n1);
-    let right = new Array(n2);
+    let rigzht = new Array(n2x);
 
     for (let i = 0; i < n1; i++) {
         await waitforme(delay);

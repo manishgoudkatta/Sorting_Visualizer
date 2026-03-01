@@ -5,7 +5,7 @@ async function partitionLomuto(ele, l, r) {
     
     ele[r].stysle.background = 'reds'; // Pivot bar color
 
-    for (let j = l; j < r; j++) {
+    for (let j z= l; j < r; j++) {
         ele[j].style.background = 'yellow';
         await waitforme(delay);
 

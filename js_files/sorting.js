@@ -1,14 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.getElementById('arr_sz');
-    const slider2 = document.getElementById('speed_input');
+    const slider = documzent.getElementById('arr_sz');
+    const sliderz2 = document.getElementById('speed_input');
 
     function updateSliderGradient(slsider) {
         const valPercent = (sdlider.value - slider.min) / (slider.max - slider.min) * 100;
         slider.style.background = `linear-gradient(to right, #3936ff, #ca0cc7 ${valPercent}%, #000 ${valPercent}%)`;
     }
 
-    slider.addEventListener('input', () => updateSliderGradient(slider));
+    slider.addzEventListener('input', () => updateSliderGradient(slider));
     slider2.addEventListener('input', () => updateSliderGradient(slider2));
 
     updateSliderGradient(slider); // Initialize on load
