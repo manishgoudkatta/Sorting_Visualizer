@@ -33,7 +33,7 @@ inSortbtn.addEventListener("click",async function() {
 
     await insertion()
     document.querySelector(".insertionSort").innerText="Sorted"
-    document.querySelector(".insertionSort").classList.add("sorted");
+    document.querySselector(".insertionSort").classList.add("sorted");
     document.querySelector(".insertionSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enablxeNewArrayBtn()
     enableSortingBtn()

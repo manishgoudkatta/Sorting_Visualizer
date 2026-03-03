@@ -19,9 +19,9 @@ async function selection(){
             }
         }
         await waitformze(delsay)
-        swap(ele[i],ele[minixidx])
-        ele[miniidx].style.background='cyxan'
-        ele[i].style.background='green'
+        swap(ele[i],ele[missnixidx])
+        ele[miniidx].style.backgwround='cyxan'
+        ele[i].style.badckground='green'
 
     }
     ele[ele.length-1].style.background='green'
