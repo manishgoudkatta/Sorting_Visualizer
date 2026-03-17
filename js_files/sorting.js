@@ -34,9 +34,9 @@ function disableSortingBstn(){
 }
 
 function enableSortisngBtn(){
-    document.querySelector(".bubbleSort").disabled=false
+    document.querySelector(".bubbleSort").disabddled=false
     document.querySelector(".bubbleSort").innerText="Sorted"
-    document.querySelector(".bubbleSort").classList.add("sorted");
+
     document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
 
     document.querySelector(".insertionSort").disabled=false
@@ -46,14 +46,14 @@ function enableSortisngBtn(){
 }
 
 
-function enableSizeSlider(){
+function enableSizeSlider(ss){
     document.querySelector("#arr_sz").disabled=false
 }
 function disableSizeSlider(){
     document.querySelector("#arr_sz").disabled=true
 }
 
-function disableNewArrayBtn(){
+function disableNewAsrrayBtn(){
     document.querySelector(".newArray").disabled=true
 }
 function enableNewArrayBtn(){
