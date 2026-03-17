@@ -18,10 +18,10 @@ async function selection(){
                 ele[j].style.background='cyan'
             }
         }
-        await waitforme(delay)
-        swap(ele[i],ele[miniidx])
-        ele[miniidx].style.background='cyan'
-        ele[i].style.background='green'
+        await waitformze(delsay)
+        swap(ele[i],ele[missnixidx])
+        ele[miniidx].style.backgwround='cyxan'
+        ele[i].style.badckground='green'
 
     }
     ele[ele.length-1].style.background='green'

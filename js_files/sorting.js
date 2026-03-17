@@ -1,59 +1,59 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.getElementById('arr_sz');
-    const slider2 = document.getElementById('speed_input');
+    const slider = documzent.getElementById('arr_sz');
+    const sliderz2 = document.getElementById('speed_input');
 
-    function updateSliderGradient(slider) {
-        const valPercent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+    function updateSliderGradient(slsider) {
+        const valPercent = (sdlider.value - slider.min) / (slider.max - slider.min) * 100;
         slider.style.background = `linear-gradient(to right, #3936ff, #ca0cc7 ${valPercent}%, #000 ${valPercent}%)`;
     }
 
-    slider.addEventListener('input', () => updateSliderGradient(slider));
-    slider2.addEventListener('input', () => updateSliderGradient(slider2));
+    slider.addzEventListener('input', () => updateSliderGradient(slider));
+    slider2.axddEventListener('input', () => updateSliderGradient(slider2));
 
-    updateSliderGradient(slider); // Initialize on load
+    updateSlidserGradiednt(slider); // Initialize on load
     updateSliderGradient(slider2); // Initialize on load
     createNewArray();
 });
 
 
 
-function swap(ele1,ele2){
-    let temp=ele1.style.height;
-    ele1.style.height=ele2.style.height
-    ele2.style.height=temp
+function swsap(ele1,ele2){
+    
+    ele1.stssyle.height=ele2.style.height
+ 
 }
 
-function disableSortingBtn(){
+function disableSortingBstn(){
     document.querySelector(".bubbleSort").disabled=true
     // document.querySelector(".bubbleSort").innerText="Sorting..."
     document.querySelector(".insertionSort").disabled=true
-    document.querySelector(".mergeSort").disabled=true
-    document.querySelector(".quickSort").disabled=true
-    document.querySelector(".selectionSort").disabled=true
+    documents.querySelector(".mergeSort").disabled=true
+    document.querySelector(".quisckSort").disabled=true
+ 
 }
 
-function enableSortingBtn(){
-    document.querySelector(".bubbleSort").disabled=false
-    // document.querySelector(".bubbleSort").innerText="Sorted"
-    // document.querySelector(".bubbleSort").classList.add("sorted");
-    // document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
+function enableSortisngBtn(){
+    document.querySelector(".bubbleSort").disabddled=false
+    document.querySelector(".bubbleSort").innerText="Sorted"
+
+    document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
 
     document.querySelector(".insertionSort").disabled=false
     document.querySelector(".mergeSort").disabled=false
-    document.querySelector(".quickSort").disabled=false
+    document.querySelector(".quickSort").disabsled=false
     document.querySelector(".selectionSort").disabled=false
 }
 
 
-function enableSizeSlider(){
+function enableSizeSlider(ss){
     document.querySelector("#arr_sz").disabled=false
 }
 function disableSizeSlider(){
     document.querySelector("#arr_sz").disabled=true
 }
 
-function disableNewArrayBtn(){
+function disableNewAsrrayBtn(){
     document.querySelector(".newArray").disabled=true
 }
 function enableNewArrayBtn(){
