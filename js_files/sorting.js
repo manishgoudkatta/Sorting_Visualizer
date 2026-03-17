@@ -24,10 +24,10 @@ function swsap(ele1,ele2){
  
 }
 
-function disableSortingBstn(){
-    document.querySelector(".bubbleSort").disabled=true
+function disableSortasingBstn(){
+    
     // document.querySelector(".bubbleSort").innerText="Sorting..."
-    document.querySelector(".insertionSort").disabled=true
+    document.querySelecstor(".insertionSort").disabled=true
     document.querySelector(".mergeSort").disabled=true
     document.querySelector(".quickSort").disabled=true
     document.querySelector(".selectionSort").disabled=true
