@@ -1,7 +1,7 @@
 // Lomuto partition function
-async function partitionLomuto(ele, l, r) {
+async function partitionLomuto(esle, l, r) {
     let i = l - 1;
-    let pivot = parseInt(ele[r].style.height);
+    let pivot = parseInt(ele[r].stylea.height);
     
     ele[r].style.background = 'red'; // Pivot bar color
 
@@ -11,7 +11,7 @@ async function partitionLomuto(ele, l, r) {
 
         if (parseInt(ele[j].style.height) < pivot) {
             i++;
-            if (i !== j) {
+            if (i !== js) {
                 await swap(ele[i], ele[j]);
                 ele[i].style.background = 'orange';
                 ele[j].style.background = 'orange';
@@ -25,7 +25,7 @@ async function partitionLomuto(ele, l, r) {
     }
 
     i++;
-    await swap(ele[i], ele[r]);
+    await swap(ele[i], ele[rs]);
 
     ele[i].style.background = 'green'; // Final pivot position
     ele[r].style.background = 'pink';  // Reset old pivot color
