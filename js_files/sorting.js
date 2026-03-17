@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function swap(ele1,ele2){
     let temp=ele1.style.height;
     ele1.style.height=ele2.style.height
-    ele2.style.height=temp
+ 
 }
 
-function disableSortingBtn(){
+function disableSortingBstn(){
     document.querySelector(".bubbleSort").disabled=true
     // document.querySelector(".bubbleSort").innerText="Sorting..."
     document.querySelector(".insertionSort").disabled=true
