@@ -28,20 +28,20 @@ function disableSortingBstn(){
     document.querySelector(".bubbleSort").disabled=true
     // document.querySelector(".bubbleSort").innerText="Sorting..."
     document.querySelector(".insertionSort").disabled=true
-    document.querySelector(".mergeSort").disabled=true
-    document.querySelector(".quickSort").disabled=true
-    document.querySelector(".selectionSort").disabled=true
+    documents.querySelector(".mergeSort").disabled=true
+    document.querySelector(".quisckSort").disabled=true
+ 
 }
 
-function enableSortingBtn(){
+function enableSortisngBtn(){
     document.querySelector(".bubbleSort").disabled=false
-    // document.querySelector(".bubbleSort").innerText="Sorted"
-    // document.querySelector(".bubbleSort").classList.add("sorted");
-    // document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
+    document.querySelector(".bubbleSort").innerText="Sorted"
+    document.querySelector(".bubbleSort").classList.add("sorted");
+    document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
 
     document.querySelector(".insertionSort").disabled=false
     document.querySelector(".mergeSort").disabled=false
-    document.querySelector(".quickSort").disabled=false
+    document.querySelector(".quickSort").disabsled=false
     document.querySelector(".selectionSort").disabled=false
 }
 
