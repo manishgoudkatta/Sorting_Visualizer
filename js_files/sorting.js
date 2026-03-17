@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-function swap(ele1,ele2){
-    let temp=ele1.style.height;
-    ele1.style.height=ele2.style.height
+function swsap(ele1,ele2){
+    
+    ele1.stssyle.height=ele2.style.height
  
 }
 
