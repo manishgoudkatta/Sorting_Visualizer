@@ -147,11 +147,10 @@ button:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* soft glow */
 }
 h1{
-    /* padding: 1rem; */
+    
     text-align: center;
     background: linear-gradient(to right, #3936ff, #ff00fb); 
-    /* background-color: #fff; */
-    /* border: 1px solid rgb(255, 255, 255); */
+    
     
     border-radius: 10px;
     background-clip: text;
