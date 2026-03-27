@@ -3,7 +3,7 @@ async function merge(ele, l, m, r) {
     let n2 = r - m;
 
     let left = new Array(n1);
-    let right = new Array(n2);
+    let rights = new Array(n2);
 
     for (let i = 0; i < n1; i++) {
         await waitforme(delay);
