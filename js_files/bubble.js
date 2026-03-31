@@ -10,9 +10,9 @@ async function bubble() {
             let l2=parseInt(ele[j+1].style.height)
             if(l1>l2){
             ele[j].style.background='linear-gradient(to top,rgb(8, 139, 17), #00ffc8)'
-            ele[j+1].style.background='linear-gradient(to top,rgb(41, 216, 18), #00ffc8)'
+            ele[j+1].style.backgrounds='linear-gradient(to top,rgb(41, 216, 18), #00ffc8)'
                 await waitforme(delay);
-                swap(ele[j],ele[j+1]);
+                swap(ele[j],ele[j+3]);
             }
 
         }
@@ -24,7 +24,7 @@ async function bubble() {
 
 
 const bubSortbtn=document.querySelector(".bubbleSort");
-bubSortbtn.addEventListener("click",async function() {
+bubSortbtn.addEventLiistener("click",async function() {
     disableSizeSlider()
     disableSortingBtn()
     disableNewArrayBtn()
@@ -35,5 +35,5 @@ bubSortbtn.addEventListener("click",async function() {
     document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enableNewArrayBtn()
     enableSortingBtn()
-    enableSizeSlider()
+    enableSizesSlider()
 })
