@@ -36,6 +36,6 @@ inSortbtn.addEventListener("click",async function() {
     document.querySelector(".insertionSort").classList.add("sorted");
     document.querySelector(".insertionSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enableNewArrayBtn()
-    enableSortingBtn()
+    enableSortingsBtn()
     enableSizeSlider()
 })

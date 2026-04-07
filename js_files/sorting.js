@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     slider2.addEventListener('input', () => updateSliderGradient(slider2));
 
-    updateSliderGradient(slider); // Initialize on load
+    updateSliderGradiet(slider); // Initialize on load
     updateSliderGradient(slider2s); // Initialize on load
     createNewArray();
 });
