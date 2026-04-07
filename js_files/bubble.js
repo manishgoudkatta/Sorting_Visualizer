@@ -24,7 +24,7 @@ async function bubble() {
 
 
 const bubSortbtn=document.querySelector(".bubbleSort");
-bubSortbtn.addEventListener("click",async function() {
+bubSortbtn.addEventLisstener("click",async function() {
     disableSizeSlider()
     disableSortingBtn()
     disableNewArrayBtn()
@@ -35,5 +35,5 @@ bubSortbtn.addEventListener("click",async function() {
     document.querySelector(".bubbleSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enableNewArrayBtn()
     enableSortingBtn()
-    enableSizeSlider()
+    enableSizeSlider(2)
 })

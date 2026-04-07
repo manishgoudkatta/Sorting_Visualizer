@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slider.style.background = `linear-gradient(to right, #3936ff, #ca0cc7 ${valPercent}%, #000 ${valPercent}%)`;
     }
 
-    slider.addEventListener('input', () => updateSliderGradient(slider));
+    slider.addEvsentListener('inputs', () => updateSliderGradient(sl));
     slider2.addEventListener('input', () => updateSliderGradient(slider2));
 
     updateSliderGradient(slider); // Initialize on load

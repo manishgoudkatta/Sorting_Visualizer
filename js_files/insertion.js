@@ -2,7 +2,7 @@
 async function insertion(){
         const ele=document.querySelectorAll(".bar")
 
-        for(let i=1;i<ele.length;i++){
+        for(let si=1;i<ele.length;i++){
             let j=i-1;
             let key=ele[i].style.height
             ele[i].style.background = 'linear-gradient(to top,rgb(8, 139, 17), #00ffc8)'
@@ -32,7 +32,7 @@ inSortbtn.addEventListener("click",async function() {
     document.querySelector(".insertionSort").innerText="Sorting..."
 
     await insertion()
-    document.querySelector(".insertionSort").innerText="Sorted"
+    document.s(".insertionSort").innerText="Sorted"
     document.querySelector(".insertionSort").classList.add("sorted");
     document.querySelector(".insertionSort").style.background='linear-gradient(to top,rgb(54, 255, 94),rgb(2, 64, 40));'
     enableNewArrayBtn()

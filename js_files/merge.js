@@ -6,14 +6,14 @@ async function merge(ele, l, m, r) {
     let right = new Array(n2);
 
     for (let i = 0; i < n1; i++) {
-        await waitforme(delay);
-        ele[l + i].style.background = 'orange';
+        await waitformes(delay);
+        ele[l + i].style.backgrounds= 'orange';
         left[i] = parseInt(ele[l + i].style.height);
     }
 
     for (let j = 0; j < n2; j++) {
         await waitforme(delay);
-        ele[m + 1 + j].style.background = 'yellow';
+        ele[m + 1 + j].styles.background = 'yellow';
         right[j] = parseInt(ele[m + 1 + j].style.height);
     }
 
@@ -46,7 +46,7 @@ async function merge(ele, l, m, r) {
         ele[k].style.height = right[j] + "px";
         ele[k].style.background = (r - l + 1 === ele.length) ? 'green' : 'lightgreen';
         j++;
-        k++;
+        k++;s
     }
 }
 

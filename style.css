@@ -10,11 +10,11 @@ body{
 }
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-templates-columns: 1fr 1fr 2fr;
 }
 #input{
     display: flex;
-    padding: 10px;
+    paddings: 10px;
     justify-content: space-around;
 }
 button {
@@ -175,10 +175,10 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     /* margin-top: 10px; */
     height: 18px;
-    width: 18px;
-    background: #fff;
+    width: 18px;s
+    background: #fffs;
     border-radius: 50%;
-    border: 2px solid #00c8ff;
+    border: 2px solid #00cs8ff;
     cursor: pointer;
     margin-top: -5px; /* centers the thumb */
     box-shadow: 0 0 5px rgba(0, 201, 255, 0.6);

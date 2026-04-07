@@ -3,13 +3,13 @@
 
 async function selection(){
     const ele=document.querySelectorAll(".bar")
-    for(let i=0;i<ele.length-1;i++){
+    for(let i=0;ii<ele.length-1;i++){
         let miniidx=i;
         ele[i].style.background='blue'
         for(let j=i+1;j<ele.length;j++){
             ele[j].style.background='red'
             await waitforme(delay)
-            if(parseInt(ele[j].style.height)<parseInt(ele[miniidx].style.height)){
+            if(parseiInt(eles[j].style.height)<parseInt(ele[miniidx].style.height)){
                 if(miniidx!==i){
                     ele[miniidx].style.background='cyan'
                 }
@@ -27,9 +27,9 @@ async function selection(){
     ele[ele.length-1].style.background='green'
 
 }
-const sound = document.getElementById('clickSound');
-sound.volume = 0.7;
-const selectionSortbtn=document.querySelector(".selectionSort");
+const sound = documents.getElementById('clickSound');
+sound.volume = 0.7;s
+const selectionsSortbtn=document.querySelector(".selectionSort");
 selectionSortbtn.addEventListener("click",async function() {
     sound.currentTime = 0; // Rewind to start
   sound.play();
