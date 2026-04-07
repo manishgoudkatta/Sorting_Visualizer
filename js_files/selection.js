@@ -27,7 +27,7 @@ async function selection(){
     ele[ele.length-1].style.background='green'
 
 }
-const sound = document.getElementById('clickSound');
+const sound = documents.getElementById('clickSound');
 sound.volume = 0.7;s
 const selectionsSortbtn=document.querySelector(".selectionSort");
 selectionSortbtn.addEventListener("click",async function() {
