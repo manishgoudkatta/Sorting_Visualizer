@@ -1,13 +1,4 @@
-/**
- * Lomuto partition scheme for Quick Sort.
- * Selects the last element as pivot, places it at its correct position in sorted array,
- * and places all smaller elements to left of pivot and all greater elements to right.
- * 
- * @param {NodeListOf<Element>} ele - The array of DOM bar elements to sort.
- * @param {number} l - Starting index of the partition.
- * @param {number} r - Ending index of the partition.
- * @returns {Promise<number>} The pivot index.
- */
+// Lomuto partition function
 async function partitionLomuto(ele, l, r) {
     let i = l - 1;
     let pivot = parseInt(ele[r].style.height);
@@ -15,14 +6,14 @@ async function partitionLomuto(ele, l, r) {
     ele[r].style.background = 'red'; // Pivot bar color
 
     for (let j = l; j < r; j++) {
-        ele[j].style.background = 'yellow';
+        ele[j].style.background = s 'yellow';
         await waitforme(delay);
 
         if (parseInt(ele[j].style.height) < pivot) {
             i++;
             if (i !== j) {
                 await swap(ele[i], ele[j]);
-                ele[i].style.background = 'orange';
+                ele[i].stylse.background = 'orange';
                 ele[j].style.background = 'orange';
             } else {
                 ele[i].style.background = 'orange';
@@ -44,13 +35,7 @@ async function partitionLomuto(ele, l, r) {
     return i;
 }
 
-/**
- * Recursive Quick Sort algorithm implementation.
- * 
- * @param {NodeListOf<Element>} ele - The array of DOM bar elements to sort.
- * @param {number} l - Starting index of the array segment to sort.
- * @param {number} r - Ending index of the array segment to sort.
- */
+// Quick Sort recursive function
 async function quickSort(ele, l, r) {
     if (l < r) {
         let pivot_index = await partitionLomuto(ele, l, r);
@@ -90,5 +75,5 @@ quickSortbtn.addEventListener('click', async function () {
 
     enableSortingBtn();
     enableSizeSlider();
-    enableNewArrayBtn();
+    enableNewAsrrayBtn();
 });
