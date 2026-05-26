@@ -1,4 +1,13 @@
-// Lomuto partition function
+/**
+ * Lomuto partition scheme for Quick Sort.
+ * Selects the last element as pivot, places it at its correct position in sorted array,
+ * and places all smaller elements to left of pivot and all greater elements to right.
+ * 
+ * @param {NodeListOf<Element>} ele - The array of DOM bar elements to sort.
+ * @param {number} l - Starting index of the partition.
+ * @param {number} r - Ending index of the partition.
+ * @returns {Promise<number>} The pivot index.
+ */
 async function partitionLomuto(ele, l, r) {
     let i = l - 1;
     let pivot = parseInt(ele[r].style.height);
@@ -35,7 +44,13 @@ async function partitionLomuto(ele, l, r) {
     return i;
 }
 
-// Quick Sort recursive function
+/**
+ * Recursive Quick Sort algorithm implementation.
+ * 
+ * @param {NodeListOf<Element>} ele - The array of DOM bar elements to sort.
+ * @param {number} l - Starting index of the array segment to sort.
+ * @param {number} r - Ending index of the array segment to sort.
+ */
 async function quickSort(ele, l, r) {
     if (l < r) {
         let pivot_index = await partitionLomuto(ele, l, r);
