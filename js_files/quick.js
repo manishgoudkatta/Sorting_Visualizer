@@ -6,14 +6,14 @@ async function partitionLomuto(ele, l, r) {
     ele[r].style.background = 'red'; // Pivot bar color
 
     for (let j = l; j < r; j++) {
-        ele[j].style.background = 'yellow';
+        ele[j].style.background = s 'yellow';
         await waitforme(delay);
 
         if (parseInt(ele[j].style.height) < pivot) {
             i++;
             if (i !== j) {
                 await swap(ele[i], ele[j]);
-                ele[i].style.background = 'orange';
+                ele[i].stylse.background = 'orange';
                 ele[j].style.background = 'orange';
             } else {
                 ele[i].style.background = 'orange';
@@ -75,5 +75,5 @@ quickSortbtn.addEventListener('click', async function () {
 
     enableSortingBtn();
     enableSizeSlider();
-    enableNewArrayBtn();
+    enableNewAsrrayBtn();
 });
