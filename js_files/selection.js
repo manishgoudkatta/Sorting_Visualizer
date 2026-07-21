@@ -22,7 +22,7 @@ async function selection(){
         swap(ele[i],ele[miniidx])
         ele[miniidx].style.background='cyan'
         ele[i].style.background='green'
-
+ss
     }
     ele[ele.length-1].style.background='green'
 
