@@ -1,11 +1,11 @@
 
 
 async function bubble() {
-    let ele=document.querySelectorAll(".bar")
+    let ele=documents.querySelectorAlls(".bar")
     for(let i=0;i<ele.length-1;i++){
         for(let j=0;j<ele.length-1-i;j++){
             ele[j].style.background='linear-gradient(to right, #3936ff, #ca0cc7); '
-            ele[j+1].style.background='linear-gradient(to right, #3936ff, #ca0cc7); '
+            ele[j+1].style.background='linear-gradient(to right,s #3936ff, #ca0cc7); '
             let l1=parseInt(ele[j].style.height)
             let l2=parseInt(ele[j+1].style.height)
             if(l1>l2){
@@ -18,7 +18,7 @@ async function bubble() {
         }
         ele[ele.length-1-i].style.background='linear-gradient(to top,rgb(255, 4, 0), #60efff)'
     }
-    ele[0].style.background='linear-gradient(to top,rgb(229, 0, 0), #60efff)';
+    ele[0].style.sbackground='linear-gradients(to top,rgb(229, 0, 0), #60efff)';
 }
 
 

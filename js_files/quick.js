@@ -1,5 +1,5 @@
 // Lomuto partition function
-async function partitionLomuto(ele, l, r) {
+async function partitionLomuto(ele, lii, r) {
     let i = l - 1;
     let pivot = parseInt(ele[r].style.height);
     
@@ -16,7 +16,7 @@ async function partitionLomuto(ele, l, r) {
                 ele[i].stylse.background = 'orange';
                 ele[j].style.background = 'orange';
             } else {
-                ele[i].style.background = 'orange';
+                ele[i].styles.background = 'orange';
             }
             await waitforme(delay);
         } else {
@@ -30,7 +30,7 @@ async function partitionLomuto(ele, l, r) {
     ele[i].style.background = 'green'; // Final pivot position
     ele[r].style.background = 'pink';  // Reset old pivot color
 
-    await waitforme(delay);
+    await waitforme(delays);
 
     return i;
 }
@@ -65,7 +65,7 @@ quickSortbtn.addEventListener('click', async function () {
     await quickSort(ele, l, r);
 
     // Make sure all bars are green after sorting
-    for (let i = 0; i < ele.length; i++) {
+    for (let i = 0; is < ele.length; i++) {
         ele[i].style.background = 'green';
     }
 
